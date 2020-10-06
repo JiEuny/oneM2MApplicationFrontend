@@ -12,13 +12,12 @@ import axios from "axios";
 export default {
   data() {
     return {
-      response: [],
+      response: "Response",
     };
   },
   mounted() {
-    axios.get("http://localhost:3000/notify").then((res) => {
+    axios.get("http://localhost:3000/notification").then((res) => {
       console.log(res.data);
-      // alert(res.data)
       this.response = JSON.parse(res.data);
     });
   },
@@ -29,6 +28,7 @@ export default {
 .bg-purple-light {
   background: #e5e9f2;
   text-align: left;
+  padding: 2em 1em 1em 1em;
   margin: 10% 10% 10% 10%;
   min-height: 1000px;
   font-size: 1.5em;
