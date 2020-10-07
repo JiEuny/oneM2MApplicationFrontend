@@ -31,7 +31,7 @@
               {{item.text}}
           </el-option>
         </el-select>
-        <el-input style="padding-left: 25%" class="inputs" type="textarea" :rows="5" placeholder="Please input" v-model="resourceType"></el-input>
+        <el-input style="padding-left: 25%; font-size:20px" class="inputs" type="textarea" :rows="5" placeholder="Please input" v-model="resourceType"></el-input>
       </div>
       <h2 />
       <el-button class="bt" type="primary" @click="create">Create Resource</el-button>
@@ -49,7 +49,7 @@ export default {
       Xm2mRI: "",
       Xm2mOrigin: "",
       contentType: "",
-      options: [{ text: 'AE', value: "{\n\t\"m2m:ae\" : {\n\t\t\"rn\": \"ae_test\"\n    }\n}" }, 
+      options: [{ text: 'AE', value: "{\n\t\"m2m:ae\" : {\n\t    \"rn\": \"ae_test\",\n\t    \"api\": \"0.2.481.2.0001.001.000111\",\n\t    \"lbl\": [\"key1\", \"key2\"],\n\t    \"rr\": true\n    }\n}" }, 
         { text: 'Container', value: "{\n\t\"m2m:cnt\" : {\n\t\t\"rn\": \"cnt_name\"\n    }\n}" }, 
         { text: 'ContentInstance', value: "{\n\t\"m2m:cin\" : {\n\t\t\"con\": \"cin_value\"\n    }\n}" }, 
         { text: 'Subscription', value: 'awer' }],
