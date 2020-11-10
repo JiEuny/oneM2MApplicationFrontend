@@ -52,7 +52,7 @@ export default {
       options: [{ text: 'AE', value: "{\n\t\"m2m:ae\" : {\n\t    \"rn\": \"ae_test\",\n\t    \"api\": \"0.2.481.2.0001.001.000111\",\n\t    \"lbl\": [\"key1\", \"key2\"],\n\t    \"rr\": true\n    }\n}" }, 
         { text: 'Container', value: "{\n\t\"m2m:cnt\" : {\n\t\t\"rn\": \"cnt_name\"\n    }\n}" }, 
         { text: 'ContentInstance', value: "{\n\t\"m2m:cin\" : {\n\t\t\"con\": \"cin_value\"\n    }\n}" }, 
-        { text: 'Subscription', value: 'awer' }],
+        { text: 'Subscription', value: "\n{\n\t\"m2m:sub\" : {\n\t\t\"rn\": \"sub1\",\n\t\t\"enc\":{\n\t\t   \"net\":[3]\n\t\t},\n\t    \"nu\": [\"mqtt://localhost/0.2.481.1.7579\"]\n    }\n}\n\n\n" }],
       resourceType: ''
     };
   },
